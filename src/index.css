@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Austyns Sakkyra';
+  src: url('./assets/AustynsSakkyra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app-container {
+  background: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.nav-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-number {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-button.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Add a subtle transition effect when scrolling between sections */
+.section {
+  transition: opacity 0.3s ease;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.section {
+  padding: 60px 20px;
+  scroll-margin-top: 80px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home {
+  min-height: 80vh;
+}
+
+#about, #products {
+  background-color: rgba(20, 20, 20, 0.5);
+  border-radius: 8px;
+  margin: 0 20px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.2s forwards;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s forwards;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.8s forwards;
+}
+
+.welcome-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 600px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 2.1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section h3 {
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+}
+
+.contact-section a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.contact-section a:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+  }
+  
+  .welcome-message {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    padding: 30px 15px;
+    min-height: auto;
+  }
+  
+  #about, #products {
+    margin: 0 10px 15px;
+  }
+  
+  .welcome-message {
+    font-size: 0.9rem;
+  }
+  
+  main {
+    gap: 10px;
+  }
+}
