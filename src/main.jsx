@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import './modernStyles.css'
+import logo from './assets/logourban.png';
 
 function App() {
   useEffect(() => {
@@ -51,9 +52,9 @@ function App() {
   return (
     <div className="app-container">
       <div className="nav-container">
-        <div className="logo-container">
-          <img src="./src/assets/logourban.png" alt="Urban Dezine Logo" className="logo" />
-        </div>
+      <div className="logo-container">
+      <img src={logo} alt="Urban Dezine Logo" className="logo" />
+      </div>
         <div className="contact-icons">
           <a href="https://wa.me/918310610919" target="_blank" rel="noopener noreferrer" className="contact-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black">
