@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './index.css'
 import './modernStyles.css'
 import logo from './assets/logourban.png';
+import PensPage from './Pens/page'
+
+function HomePage() {
+  return <App />;
+}
 
 function App() {
   useEffect(() => {
@@ -151,7 +157,9 @@ function App() {
             <div className="product-items">
               <div className="product-item">
                 <span className="product-icon">🖋</span>
-                <p>Pens (Metal, Parker, Seeded)</p>
+                <Link to="/pens" style={{ color: "#F4EEEB", textDecoration: "none" }}>
+                  <p>Pens (Metal, Parker, Seeded)</p>
+                </Link>
               </div>
               <div className="product-item">
                 <span className="product-icon">📓</span>
@@ -236,6 +244,11 @@ function App() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/pens" element={<PensPage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 )
