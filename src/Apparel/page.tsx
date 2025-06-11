@@ -2,12 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../modernStyles.css';
 import logo from '../assets/logourban.png';
-import tshirt from '../assets/tshirt.png';
 import hoodie from '../assets/hoodie.png';
-import jacket from '../assets/jacket.png';
-import uniform from '../assets/uniform.png';
+import jacket from '../assets/Jacket.png';
 import jersey from '../assets/jersey.png';
-import cap from '../assets/cap.png';
 
 function ApparelPage() {
   return (
@@ -31,7 +28,6 @@ function ApparelPage() {
             
             <div className="apparel-container">
               <div className="apparel-item">
-                <img src={tshirt} alt="Custom T-Shirt" className="apparel-image" />
                 <h4 className="apparel-title">Custom T-Shirts</h4>
                 <p className="apparel-price">Starting from ₹299</p>
                 <p className="apparel-description">High-quality cotton t-shirts with your custom design. Perfect for teams, events, or personal wear.</p>
@@ -55,7 +51,6 @@ function ApparelPage() {
               </div>
 
               <div className="apparel-item">
-                <img src={uniform} alt="Work Uniform" className="apparel-image" />
                 <h4 className="apparel-title">Work Uniforms</h4>
                 <p className="apparel-price">Starting from ₹599</p>
                 <p className="apparel-description">Durable work uniforms designed for comfort and professionalism. Custom embroidery available.</p>
@@ -71,7 +66,6 @@ function ApparelPage() {
               </div>
 
               <div className="apparel-item">
-                <img src={cap} alt="Custom Cap" className="apparel-image" />
                 <h4 className="apparel-title">Custom Caps</h4>
                 <p className="apparel-price">Starting from ₹199</p>
                 <p className="apparel-description">Premium quality caps with custom embroidery or printing. Great for promotions and merchandise.</p>
