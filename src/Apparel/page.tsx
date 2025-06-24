@@ -5,6 +5,7 @@ import logo from '../assets/logourban.png';
 import hoodie from '../assets/hoodie.png';
 import jacket from '../assets/Jacket.png';
 import jersey from '../assets/jersey.png';
+import labcoat from '../assets/labcoat.png';
 
 function ApparelPage() {
   return (
@@ -51,6 +52,7 @@ function ApparelPage() {
               </div>
 
               <div className="apparel-item">
+                <img src={labcoat} alt="Work Uniform" className="apparel-image" />
                 <h4 className="apparel-title">Work Uniforms</h4>
                 <p className="apparel-price">Starting from ₹599</p>
                 <p className="apparel-description">Durable work uniforms designed for comfort and professionalism. Custom embroidery available.</p>

@@ -13,6 +13,8 @@ import tempBottle from './assets/tempbottle.png'
 import hotColdBottle from './assets/hotncoldbottle.png'
 import coffeeMug from './assets/coffeemug.png'
 import ApparelPage from './Apparel/page'
+import GiftingSetsPage from './GiftingSets/page'
+import TechPage from './Tech/page'
 function HomePage() {
   return <App />;
 }
@@ -182,11 +184,15 @@ function App() {
               </div>
               <div className="product-item">
                 <span className="product-icon">🎁</span>
-                <p>Gifting Kits (Combo Boxes, Employee Kits)</p>
+                <Link to="/gifting-sets" style={{ color: "#F4EEEB", textDecoration: "none" }}>
+                  <p>Gifting Kits (Combo Boxes, Employee Kits)</p>
+                </Link>
               </div>
               <div className="product-item">
                 <span className="product-icon">🖥️</span>
-                <p>Tech (Earbuds, Bluetooth Speakers, Power Banks)</p>
+                <Link to="/tech" style={{ color: "#F4EEEB", textDecoration: "none" }}>
+                  <p>Tech (Earbuds, Bluetooth Speakers, Power Banks)</p>
+                </Link>
               </div>
               <div className="product-item">
                 <span className="product-icon">🎒</span>
@@ -261,6 +267,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/pens" element={<PensPage />} />
         <Route path="/diaries" element={<DiariesPage />} />
         <Route path="/apparel" element={<ApparelPage />} />
+        <Route path="/gifting-sets" element={<GiftingSetsPage />} />
+        <Route path="/tech" element={<TechPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
