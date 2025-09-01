@@ -337,6 +337,20 @@ function App() {
                   <span className="product-count">3+ Sets</span>
                 </div>
               </Link>
+
+              <Link to="/custom-merchandise" className={`product-card ${showContent ? 'fade-in-up delay-21' : ''}`}>
+                <div className="product-image">
+                  <img src={coffeeMug} alt="Custom Merchandise" />
+                  <div className="product-overlay">
+                    <span className="view-more">View Collection</span>
+                  </div>
+                </div>
+                <div className="product-info">
+                  <h3>Custom Merchandise</h3>
+                  <p>Branded products for your business</p>
+                  <span className="product-count">15+ Options</span>
+                </div>
+              </Link>
             </div>
             </div>
           </section>
