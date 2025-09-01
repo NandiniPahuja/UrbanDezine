@@ -5,8 +5,8 @@ import './index.css'
 import './modernStyles.css'
 import logo from './assets/logourban.png'
 import mainpage from './assets/Mainpage.png'
-import PensPage from './Pens/page'
-import DiariesPage from './Diaries/page'
+import PensPage from './Pens/page.jsx'
+import DiariesPage from './Diaries/page.jsx'
 import classicNotebook from './assets/ClassicNotebook.png'
 import woodenDiary from './assets/woodendiary.png'
 import woodenNotebook from './assets/woodennotebook.png'
@@ -17,11 +17,11 @@ import metalPen from './assets/metal pen.png'
 import hoodie from './assets/hoodie.png'
 import setof3Black from './assets/setof3_black.png'
 import setof5 from './assets/setof5.png'
-import ApparelPage from './Apparel/page'
-import GiftingSetsPage from './GiftingSets/page'
-import TechPage from './Tech/page'
-import BagsPage from './Bags/page'
-import CustomMerchandisePage from './CustomMerchandise/page'
+import ApparelPage from './Apparel/page.tsx'
+import GiftingSetsPage from './GiftingSets/page.jsx'
+import TechPage from './Tech/page.jsx'
+import BagsPage from './Bags/page.jsx'
+import CustomMerchandisePage from './CustomMerchandise/page.jsx'
 
 function HomePage() {
   return <App />;
@@ -61,7 +61,9 @@ function App() {
         {/* Navigation */}
         <nav className="nav-container">
           <div className="logo-container">
-            <img src={logo} alt="Urban Dezine Logo" className="logo" />
+            <Link to="/">
+              <img src={logo} alt="Urban Dezine Logo" className="logo" />
+            </Link>
           </div>
           <div className="contact-icons">
             <a href="https://wa.me/918310613919" target="_blank" rel="noopener noreferrer" className="contact-icon">
@@ -77,7 +79,9 @@ function App() {
             <span className="contact-number">+91 831 061 0919</span>
           </div>
           <div className="nav-buttons">
-            <a href="#home" className="nav-button">Home</a>
+            <Link to="/" className="nav-button">Home</Link>
+            <Link to="/pens" className="nav-button">Pens</Link>
+            <Link to="/diaries" className="nav-button">Diaries</Link>
             <a href="#about" className="nav-button">Services</a>
             <a href="#products" className="nav-button">Catalog</a>
             <a href="#footer" className="nav-button">Contact</a>
