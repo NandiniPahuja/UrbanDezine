@@ -28,35 +28,19 @@ function HomePage() {
 }
 
 function App() {
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [showContent, setShowContent] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false); // Set to false for immediate content display
+  const [showContent, setShowContent] = React.useState(true); // Set to true for immediate content display
 
   useEffect(() => {
-    // Simulate loading time for the animation
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-      // Start content animations after loader disappears
-      setTimeout(() => {
-        setShowContent(true);
-      }, 300);
-    }, 3000);
-
-    return () => clearTimeout(timer);
+    // Content is immediately visible now
+    setIsLoading(false);
+    setShowContent(true);
   }, []);
 
   return (
     <div>
-      {/* Site Loader */}
-      <div id="site-loader" className={isLoading ? "site-loader" : "site-loader loader-hide"}>
-        <div className="loader-content">
-          <img src={logo} alt="UrbanDezine Logo" className="loader-logo" />
-          <div className="loader-spinner"></div>
-          <h2 className="loader-title">Urban Dezine</h2>
-        </div>
-      </div>
-
       {/* Main App Container */}
-      <div className={`app-container ${!isLoading ? 'visible' : ''}`}>
+      <div className="app-container visible">
         <div className="main-content-wrapper">
         {/* Navigation */}
         <nav className="nav-container">
@@ -92,7 +76,7 @@ function App() {
         <main>
           <section id="home" className="section">
             <div className="title-container">
-              <div className={`title-content ${showContent ? 'animate-in' : ''}`}>
+              <div className="title-content animate-in">
                 <p className={`tagline ${showContent ? 'fade-in-up delay-1' : ''}`} style={{color: "black", fontWeight: "bold"}}>Gifting made memorable.</p>
                 <h1 className={`title ${showContent ? 'fade-in-up delay-2' : ''}`}>Urban Dezine</h1>
                 <p className={`subheading ${showContent ? 'fade-in-up delay-3' : ''}`} style={{color: "black", fontWeight: "bold"}}>Customizing Your Thoughts Since 2015</p>

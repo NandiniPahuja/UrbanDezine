@@ -102,7 +102,7 @@ body {
 
 /* App Container */
 .app-container {
-  opacity: 0;
+  opacity: 1; /* Always visible */
   transition: opacity 0.8s ease-in;
 }
 
@@ -318,64 +318,44 @@ body {
 
 /* Animation Classes */
 .fade-in-up {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease forwards;
+  opacity: 1; /* Ensure all elements are visible immediately */
+  transform: translateY(0); /* No transform by default */
 }
 
-.fade-in-up.delay-1 { animation-delay: 0.2s; }
-.fade-in-up.delay-2 { animation-delay: 0.4s; }
-.fade-in-up.delay-3 { animation-delay: 0.6s; }
-.fade-in-up.delay-4 { animation-delay: 0.8s; }
-.fade-in-up.delay-5 { animation-delay: 1.0s; }
-.fade-in-up.delay-6 { animation-delay: 1.2s; }
-.fade-in-up.delay-7 { animation-delay: 1.4s; }
-.fade-in-up.delay-8 { animation-delay: 1.6s; }
-.fade-in-up.delay-9 { animation-delay: 1.8s; }
-.fade-in-up.delay-10 { animation-delay: 2.0s; }
-.fade-in-up.delay-11 { animation-delay: 2.2s; }
-.fade-in-up.delay-12 { animation-delay: 2.4s; }
-.fade-in-up.delay-13 { animation-delay: 2.6s; }
-.fade-in-up.delay-14 { animation-delay: 2.8s; }
-.fade-in-up.delay-15 { animation-delay: 3.0s; }
-.fade-in-up.delay-16 { animation-delay: 3.2s; }
-.fade-in-up.delay-17 { animation-delay: 3.4s; }
-.fade-in-up.delay-18 { animation-delay: 3.6s; }
-.fade-in-up.delay-19 { animation-delay: 3.8s; }
-.fade-in-up.delay-20 { animation-delay: 4.0s; }
-.fade-in-up.delay-21 { animation-delay: 4.2s; }
-.fade-in-up.delay-22 { animation-delay: 4.4s; }
-.fade-in-up.delay-23 { animation-delay: 4.6s; }
-.fade-in-up.delay-24 { animation-delay: 4.8s; }
-.fade-in-up.delay-25 { animation-delay: 5.0s; }
-.fade-in-up.delay-26 { animation-delay: 5.2s; }
-.fade-in-up.delay-27 { animation-delay: 5.4s; }
+/* Keep the delay classes for compatibility but they won't affect visibility */
+.fade-in-up.delay-1, .fade-in-up.delay-2, .fade-in-up.delay-3, .fade-in-up.delay-4,
+.fade-in-up.delay-5, .fade-in-up.delay-6, .fade-in-up.delay-7, .fade-in-up.delay-8,
+.fade-in-up.delay-9, .fade-in-up.delay-10, .fade-in-up.delay-11, .fade-in-up.delay-12,
+.fade-in-up.delay-13, .fade-in-up.delay-14, .fade-in-up.delay-15, .fade-in-up.delay-16,
+.fade-in-up.delay-17, .fade-in-up.delay-18, .fade-in-up.delay-19, .fade-in-up.delay-20,
+.fade-in-up.delay-21, .fade-in-up.delay-22, .fade-in-up.delay-23, .fade-in-up.delay-24,
+.fade-in-up.delay-25, .fade-in-up.delay-26, .fade-in-up.delay-27 {
+  opacity: 1; /* Make sure all delayed elements are visible too */
+}
 
 .slide-in-left {
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: slideInLeft 0.8s ease forwards;
+  opacity: 1; /* Make sure all elements are visible immediately */
+  transform: translateX(0); /* No initial transform */
 }
 
-.slide-in-left.delay-1 { animation-delay: 0.2s; }
-.slide-in-left.delay-2 { animation-delay: 0.4s; }
-.slide-in-left.delay-3 { animation-delay: 0.6s; }
-.slide-in-left.delay-4 { animation-delay: 0.8s; }
-.slide-in-left.delay-5 { animation-delay: 1.0s; }
-.slide-in-left.delay-6 { animation-delay: 1.2s; }
-.slide-in-left.delay-7 { animation-delay: 1.4s; }
-.slide-in-left.delay-8 { animation-delay: 1.6s; }
-.slide-in-left.delay-9 { animation-delay: 1.8s; }
-.slide-in-left.delay-10 { animation-delay: 2.0s; }
+.slide-in-left.delay-1, .slide-in-left.delay-2, .slide-in-left.delay-3, 
+.slide-in-left.delay-4, .slide-in-left.delay-5, .slide-in-left.delay-6,
+.slide-in-left.delay-7, .slide-in-left.delay-8, .slide-in-left.delay-9,
+.slide-in-left.delay-10 {
+  opacity: 1; /* Ensure all elements with delays are visible */
+}
 
 .slide-in-right {
-  opacity: 0;
-  transform: translateX(50px);
-  animation: slideInRight 1s ease forwards;
+  opacity: 1; /* Make sure all elements are visible immediately */
+  transform: translateX(0); /* No initial transform */
 }
 
 /* Keyframe Animations */
 @keyframes fadeInUp {
+  from {
+    opacity: 1; /* Start visible */
+    transform: translateY(0);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -383,6 +363,10 @@ body {
 }
 
 @keyframes slideInLeft {
+  from {
+    opacity: 1; /* Start visible */
+    transform: translateX(0);
+  }
   to {
     opacity: 1;
     transform: translateX(0);
@@ -390,6 +374,10 @@ body {
 }
 
 @keyframes slideInRight {
+  from {
+    opacity: 1; /* Start visible */
+    transform: translateX(0);
+  }
   to {
     opacity: 1;
     transform: translateX(0);
@@ -397,7 +385,7 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
+  from { opacity: 1; } /* Start visible */
   to { opacity: 1; }
 }
 
