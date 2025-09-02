@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../modernStyles.css';
+import '../productStyles.css';
 import logo from '../assets/logourban.png';
 
 function TechPage() {

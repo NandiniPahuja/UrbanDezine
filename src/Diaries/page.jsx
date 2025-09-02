@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../modernStyles.css';
+import '../productStyles.css';
 import classicNotebook from '../assets/ClassicNotebook.png';
 import woodenDiary from '../assets/woodendiary.png';
 import woodenNotebook from '../assets/woodennotebook.png';

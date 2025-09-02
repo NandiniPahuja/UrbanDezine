@@ -1,0 +1,798 @@
+/* Common Product Page Styles */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #29281e 0%, #1a1a1a 100%);
+  color: #ffffff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.title-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #88d3ce;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.title-content h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Product Grid Container - Common Style */
+.product-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Product Item - Common Style */
+.product-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.product-image-container {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  background: #f0f0f0;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.product-item:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: linear-gradient(to bottom, rgba(41, 40, 30, 0.8), rgba(26, 26, 26, 0.95));
+}
+
+.product-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.product-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-self: center;
+  margin-top: auto;
+}
+
+.product-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}
+
+/* Footer style */
+.footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .product-grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .product-image-container {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 15px 20px;
+  }
+  
+  .title-content h2 {
+    font-size: 2rem;
+  }
+  
+  .title-content h3 {
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-grid-container {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .product-image-container {
+    height: 200px;
+  }
+}
+
+/* Pens Page Styles */
+.pens-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.pen-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.pen-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.pen-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background: rgba(240, 240, 240, 0.05);
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.pen-item:hover .pen-image {
+  transform: scale(1.05);
+}
+
+.pen-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.pen-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.pen-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+.pen-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 20px 20px;
+}
+
+.pen-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}
+
+/* Diaries Page */
+.diaries-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.diary-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.diary-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.diary-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background: rgba(240, 240, 240, 0.05);
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.diary-item:hover .diary-image {
+  transform: scale(1.05);
+}
+
+.diary-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.diary-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.diary-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+.diary-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 20px 20px;
+}
+
+.diary-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}
+
+/* Apparel Page */
+.apparel-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.apparel-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.apparel-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.apparel-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background: rgba(240, 240, 240, 0.05);
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.apparel-item:hover .apparel-image {
+  transform: scale(1.05);
+}
+
+.apparel-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.apparel-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.apparel-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+.apparel-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 20px 20px;
+}
+
+.apparel-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}
+
+/* Tech Page */
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.tech-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.tech-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background: rgba(240, 240, 240, 0.05);
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.tech-item:hover .tech-image {
+  transform: scale(1.05);
+}
+
+.tech-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.tech-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.tech-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+.tech-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 20px 20px;
+}
+
+.tech-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}
+
+/* Bags Page */
+.bags-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.bag-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.bag-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.bag-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background: rgba(240, 240, 240, 0.05);
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.bag-item:hover .bag-image {
+  transform: scale(1.05);
+}
+
+.bag-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.bag-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.bag-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+.bag-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 20px 20px;
+}
+
+.bag-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}
+
+/* Gifting Sets Page */
+.gifting-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.gifting-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.gifting-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.gifting-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  background: rgba(240, 240, 240, 0.05);
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.gifting-item:hover .gifting-image {
+  transform: scale(1.05);
+}
+
+.gifting-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 15px 0 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 20px;
+}
+
+.gifting-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.gifting-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+.gifting-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 20px 20px;
+}
+
+.gifting-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}
+
+/* Custom Merchandise Page */
+.merchandise-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.merchandise-item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.merchandise-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(136, 211, 206, 0.5);
+}
+
+.merchandise-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #88d3ce;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.merchandise-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.merchandise-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.merchandise-button {
+  background: linear-gradient(135deg, #88d3ce 0%, #66b2b8 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-self: center;
+  margin-top: auto;
+}
+
+.merchandise-button:hover {
+  background: linear-gradient(135deg, #66b2b8 0%, #88d3ce 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(136, 211, 206, 0.3);
+}

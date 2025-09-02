@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../modernStyles.css';
+import '../productStyles.css';
 import metalPen from '../assets/metal pen.png';
 import parkerPen from '../assets/parkerpen.png';
 import seedPen from '../assets/seedpen.png';
