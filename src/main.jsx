@@ -64,8 +64,6 @@ function App() {
           </div>
           <div className="nav-buttons">
             <Link to="/" className="nav-button">Home</Link>
-            <Link to="/pens" className="nav-button">Pens</Link>
-            <Link to="/diaries" className="nav-button">Diaries</Link>
             <a href="#about" className="nav-button">Services</a>
             <a href="#products" className="nav-button">Catalog</a>
             <a href="#footer" className="nav-button">Contact</a>
@@ -77,9 +75,9 @@ function App() {
           <section id="home" className="section">
             <div className="title-container">
               <div className="title-content animate-in">
-                <p className={`tagline ${showContent ? 'fade-in-up delay-1' : ''}`} style={{color: "black", fontWeight: "bold"}}>Gifting made memorable.</p>
+                <p className={`tagline ${showContent ? 'fade-in-up delay-1' : ''}`} style={{color: "white", fontWeight: "bold", fontSize: "1.5rem"}}>Gifting made memorable.</p>
                 <h1 className={`title ${showContent ? 'fade-in-up delay-2' : ''}`}>Urban Dezine</h1>
-                <p className={`subheading ${showContent ? 'fade-in-up delay-3' : ''}`} style={{color: "black", fontWeight: "bold"}}>Customizing Your Thoughts Since 2015</p>
+                <p className={`subheading ${showContent ? 'fade-in-up delay-3' : ''}`} style={{color: "white", fontWeight: "bold", fontSize: "1.5rem"}}>Customizing Your Thoughts Since 2015</p>
                 <p className={`welcome-message ${showContent ? 'fade-in-up delay-4' : ''}`}>Looking for a gift that speaks your vibe? We turn your thoughts into beautiful, personalized products that stay close to the heart. From sleek metal pens to cozy hoodies, aesthetic diaries to premium laptop bags — everything here is uniquely you.</p>
                 
                 <a href="https://wa.me/918310610919" target="_blank" rel="noopener noreferrer" className={`whatsapp-button ${showContent ? 'fade-in-up delay-5' : ''}`}>
@@ -237,105 +235,65 @@ function App() {
                 <p className={`section-subtitle ${showContent ? 'fade-in-up delay-14' : ''}`}>Discover our premium collection of customizable products</p>
               </div>
             
-            <div className="products-grid">
-              <Link to="/pens" className={`product-card ${showContent ? 'fade-in-up delay-15' : ''}`}>
-                <div className="product-image">
-                  <img src={metalPen} alt="Premium Pens" />
-                  <div className="product-overlay">
-                    <span className="view-more">View Collection</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3>Premium Pens</h3>
-                  <p>Elegant writing instruments that make a statement</p>
-                  <span className="product-count">5+ Designs</span>
-                </div>
-              </Link>
-
-              <Link to="/diaries" className={`product-card ${showContent ? 'fade-in-up delay-16' : ''}`}>
-                <div className="product-image">
-                  <img src={woodenDiary} alt="Custom Diaries" />
-                  <div className="product-overlay">
-                    <span className="view-more">View Collection</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3>Custom Diaries</h3>
-                  <p>Personalized notebooks for thoughts and ideas</p>
-                  <span className="product-count">8+ Designs</span>
-                </div>
-              </Link>
-
-              <Link to="/apparel" className={`product-card ${showContent ? 'fade-in-up delay-17' : ''}`}>
-                <div className="product-image">
-                  <img src={hoodie} alt="Custom Apparel" />
-                  <div className="product-overlay">
-                    <span className="view-more">View Collection</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3>Custom Apparel</h3>
-                  <p>Branded clothing that represents your style</p>
-                  <span className="product-count">10+ Items</span>
-                </div>
-              </Link>
-
-              <Link to="/tech" className={`product-card ${showContent ? 'fade-in-up delay-18' : ''}`}>
-                <div className="product-image">
-                  <img src={tempBottle} alt="Tech Accessories" />
-                  <div className="product-overlay">
-                    <span className="view-more">View Collection</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3>Tech Accessories</h3>
-                  <p>Modern gadgets with a personal touch</p>
-                  <span className="product-count">6+ Items</span>
-                </div>
-              </Link>
-
-              <Link to="/bags" className={`product-card ${showContent ? 'fade-in-up delay-19' : ''}`}>
-                <div className="product-image">
-                  <img src={setof3Black} alt="Premium Bags" />
-                  <div className="product-overlay">
-                    <span className="view-more">View Collection</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3>Premium Bags</h3>
-                  <p>Functional and stylish carrying solutions</p>
-                  <span className="product-count">4+ Styles</span>
-                </div>
-              </Link>
-
-              <Link to="/gifting-sets" className={`product-card ${showContent ? 'fade-in-up delay-20' : ''}`}>
-                <div className="product-image">
-                  <img src={setof5} alt="Gifting Sets" />
-                  <div className="product-overlay">
-                    <span className="view-more">View Collection</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3>Gifting Sets</h3>
-                  <p>Curated collections for special occasions</p>
-                  <span className="product-count">3+ Sets</span>
-                </div>
-              </Link>
-
-              <Link to="/custom-merchandise" className={`product-card ${showContent ? 'fade-in-up delay-21' : ''}`}>
-                <div className="product-image">
-                  <img src={coffeeMug} alt="Custom Merchandise" />
-                  <div className="product-overlay">
-                    <span className="view-more">View Collection</span>
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h3>Custom Merchandise</h3>
-                  <p>Branded products for your business</p>
-                  <span className="product-count">15+ Options</span>
-                </div>
-              </Link>
-            </div>
+              <div className="products-list-container">
+                <ul className="products-list">
+                  <li className={`product-item ${showContent ? 'fade-in-up delay-15' : ''}`}>
+                    <Link to="/pens" className="product-link">
+                      <span className="product-icon">✒️</span>
+                      <span className="product-name">Premium Pens</span>
+                      <span className="product-arrow">→</span>
+                    </Link>
+                  </li>
+                  
+                  <li className={`product-item ${showContent ? 'fade-in-up delay-16' : ''}`}>
+                    <Link to="/diaries" className="product-link">
+                      <span className="product-icon">📔</span>
+                      <span className="product-name">Elegant Diaries</span>
+                      <span className="product-arrow">→</span>
+                    </Link>
+                  </li>
+                  
+                  <li className={`product-item ${showContent ? 'fade-in-up delay-17' : ''}`}>
+                    <Link to="/apparel" className="product-link">
+                      <span className="product-icon">👕</span>
+                      <span className="product-name">Custom Apparel</span>
+                      <span className="product-arrow">→</span>
+                    </Link>
+                  </li>
+                  
+                  <li className={`product-item ${showContent ? 'fade-in-up delay-18' : ''}`}>
+                    <Link to="/tech" className="product-link">
+                      <span className="product-icon">🔌</span>
+                      <span className="product-name">Tech Accessories</span>
+                      <span className="product-arrow">→</span>
+                    </Link>
+                  </li>
+                  
+                  <li className={`product-item ${showContent ? 'fade-in-up delay-19' : ''}`}>
+                    <Link to="/bags" className="product-link">
+                      <span className="product-icon">🎒</span>
+                      <span className="product-name">Premium Bags</span>
+                      <span className="product-arrow">→</span>
+                    </Link>
+                  </li>
+                  
+                  <li className={`product-item ${showContent ? 'fade-in-up delay-20' : ''}`}>
+                    <Link to="/gifting-sets" className="product-link">
+                      <span className="product-icon">🎁</span>
+                      <span className="product-name">Gifting Sets</span>
+                      <span className="product-arrow">→</span>
+                    </Link>
+                  </li>
+                  
+                  <li className={`product-item ${showContent ? 'fade-in-up delay-21' : ''}`}>
+                    <Link to="/custom-merchandise" className="product-link">
+                      <span className="product-icon">☕</span>
+                      <span className="product-name">Custom Merchandise</span>
+                      <span className="product-arrow">→</span>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
 
@@ -407,7 +365,7 @@ function App() {
               <h3>Contact Us</h3>
               <p>📍 Based in India</p>
               <p><strong>Email:</strong> <a href="mailto:urbandezine2015@gmail.com">urbandezine2015@gmail.com</a></p>
-              <p><strong>WhatsApp:</strong> <a href="https://wa.me/919886010956">+91-9886010956</a></p>
+              <p><strong>WhatsApp:</strong> <a href="https://wa.me/918310610919">+91-8310610919</a></p>
             </div>
             <div className="contact-section">
               <h3>Follow Us</h3>
