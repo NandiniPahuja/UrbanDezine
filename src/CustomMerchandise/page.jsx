@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../modernStyles.css';
 import '../productStyles.css';
 import logo from '../assets/logourban.png';
+import { Icon } from '../icons.jsx';
 
 function CustomMerchandisePage() {
   return (
@@ -26,6 +27,7 @@ function CustomMerchandisePage() {
             
             <div className="merchandise-container">
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="keychain" /></span></div>
                 <h4 className="merchandise-title">Custom Keychains</h4>
                 <p className="merchandise-price">Starting from ₹99</p>
                 <p className="merchandise-description">Metal and acrylic keychains with custom logo. Perfect for promotional giveaways.</p>
@@ -33,6 +35,7 @@ function CustomMerchandisePage() {
               </div>
               
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="deskorganizer" /></span></div>
                 <h4 className="merchandise-title">Desk Accessories</h4>
                 <p className="merchandise-price">Starting from ₹299</p>
                 <p className="merchandise-description">Premium desk organizers and accessories with company branding.</p>
@@ -40,6 +43,7 @@ function CustomMerchandisePage() {
               </div>
               
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="mousepad" /></span></div>
                 <h4 className="merchandise-title">Mouse Pads</h4>
                 <p className="merchandise-price">Starting from ₹149</p>
                 <p className="merchandise-description">Custom printed mouse pads with ergonomic design. Available in various sizes.</p>
@@ -47,6 +51,7 @@ function CustomMerchandisePage() {
               </div>
 
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="ball" /></span></div>
                 <h4 className="merchandise-title">Stress Balls</h4>
                 <p className="merchandise-price">Starting from ₹79</p>
                 <p className="merchandise-description">Anti-stress balls with company logo. Great for office wellness programs.</p>
@@ -54,6 +59,7 @@ function CustomMerchandisePage() {
               </div>
 
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="calendar" /></span></div>
                 <h4 className="merchandise-title">Desk Calendars</h4>
                 <p className="merchandise-price">Starting from ₹199</p>
                 <p className="merchandise-description">Custom printed desk calendars with company branding and important dates.</p>
@@ -61,6 +67,7 @@ function CustomMerchandisePage() {
               </div>
 
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="usb" /></span></div>
                 <h4 className="merchandise-title">USB Drives</h4>
                 <p className="merchandise-price">Starting from ₹399</p>
                 <p className="merchandise-description">Branded USB drives in various storage capacities. Perfect for data distribution.</p>
@@ -68,6 +75,7 @@ function CustomMerchandisePage() {
               </div>
 
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="phonestand" /></span></div>
                 <h4 className="merchandise-title">Phone Accessories</h4>
                 <p className="merchandise-price">Starting from ₹149</p>
                 <p className="merchandise-description">Phone stands, card holders, and pop sockets with custom branding.</p>
@@ -75,6 +83,7 @@ function CustomMerchandisePage() {
               </div>
 
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="umbrella" /></span></div>
                 <h4 className="merchandise-title">Umbrella</h4>
                 <p className="merchandise-price">Starting from ₹499</p>
                 <p className="merchandise-description">Premium umbrellas with company logo. Available in various sizes and colors.</p>
@@ -82,6 +91,7 @@ function CustomMerchandisePage() {
               </div>
 
               <div className="merchandise-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="gift" /></span></div>
                 <h4 className="merchandise-title">Gift Sets</h4>
                 <p className="merchandise-price">Starting from ₹999</p>
                 <p className="merchandise-description">Curated gift sets combining multiple promotional items in elegant packaging.</p>

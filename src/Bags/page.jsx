@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../modernStyles.css';
 import '../productStyles.css';
 import logo from '../assets/logourban.png';
+import { Icon } from '../icons.jsx';
 
 function BagsPage() {
   return (
@@ -26,6 +27,7 @@ function BagsPage() {
             
             <div className="bags-container">
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="laptopbag" /></span></div>
                 <h4 className="bag-title">Executive Laptop Bag</h4>
                 <p className="bag-price">Starting from ₹999</p>
                 <p className="bag-description">Professional laptop bag with multiple compartments. Perfect for business professionals.</p>
@@ -33,6 +35,7 @@ function BagsPage() {
               </div>
               
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="backpack" /></span></div>
                 <h4 className="bag-title">Travel Backpack</h4>
                 <p className="bag-price">Starting from ₹1299</p>
                 <p className="bag-description">Spacious backpack with anti-theft features and USB charging port. Ideal for modern travelers.</p>
@@ -40,6 +43,7 @@ function BagsPage() {
               </div>
               
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="tote" /></span></div>
                 <h4 className="bag-title">Conference Tote</h4>
                 <p className="bag-price">Starting from ₹599</p>
                 <p className="bag-description">Elegant tote bag perfect for conferences and meetings. Includes padded tablet sleeve.</p>
@@ -47,6 +51,7 @@ function BagsPage() {
               </div>
 
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="messenger" /></span></div>
                 <h4 className="bag-title">Messenger Bag</h4>
                 <p className="bag-price">Starting from ₹799</p>
                 <p className="bag-description">Versatile messenger bag with adjustable strap. Great for daily commute and casual meetings.</p>
@@ -54,6 +59,7 @@ function BagsPage() {
               </div>
 
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="duffel" /></span></div>
                 <h4 className="bag-title">Gym Duffel</h4>
                 <p className="bag-price">Starting from ₹699</p>
                 <p className="bag-description">Spacious duffel bag with shoe compartment. Perfect for gym and sports activities.</p>
@@ -61,6 +67,7 @@ function BagsPage() {
               </div>
 
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="folder" /></span></div>
                 <h4 className="bag-title">Document Bag</h4>
                 <p className="bag-price">Starting from ₹449</p>
                 <p className="bag-description">Professional document carrier with multiple sections. Ideal for organizing important papers.</p>
@@ -68,6 +75,7 @@ function BagsPage() {
               </div>
 
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="duffel" /></span></div>
                 <h4 className="bag-title">Weekend Bag</h4>
                 <p className="bag-price">Starting from ₹1499</p>
                 <p className="bag-description">Stylish weekend bag with separate compartments for clothes and accessories.</p>
@@ -75,6 +83,7 @@ function BagsPage() {
               </div>
 
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="tote" /></span></div>
                 <h4 className="bag-title">Eco-Friendly Tote</h4>
                 <p className="bag-price">Starting from ₹299</p>
                 <p className="bag-description">Sustainable canvas tote with custom branding options. Perfect for eco-conscious organizations.</p>
@@ -82,6 +91,7 @@ function BagsPage() {
               </div>
 
               <div className="bag-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="briefcase" /></span></div>
                 <h4 className="bag-title">Executive Briefcase</h4>
                 <p className="bag-price">Starting from ₹1999</p>
                 <p className="bag-description">Premium leather briefcase with dedicated laptop compartment and organizer pockets.</p>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../modernStyles.css';
 import '../productStyles.css';
 import logo from '../assets/logourban.png';
+import { Icon } from '../icons.jsx';
 
 function TechPage() {
   return (
@@ -26,6 +27,7 @@ function TechPage() {
             
             <div className="tech-container">
               <div className="tech-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="earbuds" /></span></div>
                 <h4 className="tech-title">Wireless Earbuds</h4>
                 <p className="tech-price">Starting from ₹1299</p>
                 <p className="tech-description">High-quality wireless earbuds with custom branding. Perfect for corporate gifts and premium giveaways.</p>
@@ -33,6 +35,7 @@ function TechPage() {
               </div>
               
               <div className="tech-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="speaker" /></span></div>
                 <h4 className="tech-title">Bluetooth Speakers</h4>
                 <p className="tech-price">Starting from ₹999</p>
                 <p className="tech-description">Portable speakers with excellent sound quality. Available with custom logo and packaging.</p>
@@ -40,6 +43,7 @@ function TechPage() {
               </div>
               
               <div className="tech-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="powerbank" /></span></div>
                 <h4 className="tech-title">Power Banks</h4>
                 <p className="tech-price">Starting from ₹799</p>
                 <p className="tech-description">10000mAh capacity power banks with fast charging. Customizable with company branding.</p>
@@ -47,6 +51,7 @@ function TechPage() {
               </div>
 
               <div className="tech-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="smartwatch" /></span></div>
                 <h4 className="tech-title">Smart Watches</h4>
                 <p className="tech-price">Starting from ₹1999</p>
                 <p className="tech-description">Feature-rich smart watches with health tracking. Custom watch faces and packaging available.</p>
@@ -54,6 +59,7 @@ function TechPage() {
               </div>
 
               <div className="tech-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="usb" /></span></div>
                 <h4 className="tech-title">USB Flash Drives</h4>
                 <p className="tech-price">Starting from ₹499</p>
                 <p className="tech-description">High-speed USB drives with various storage options. Custom shapes and designs available.</p>
@@ -61,6 +67,7 @@ function TechPage() {
               </div>
 
               <div className="tech-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="charger" /></span></div>
                 <h4 className="tech-title">Wireless Chargers</h4>
                 <p className="tech-price">Starting from ₹899</p>
                 <p className="tech-description">Fast wireless charging pads with LED indicators. Customizable with company logos.</p>

@@ -7,6 +7,7 @@ import hoodie from '../assets/hoodie.png';
 import jacket from '../assets/Jacket.png';
 import jersey from '../assets/jersey.png';
 import labcoat from '../assets/labcoat.png';
+import { Icon } from '../icons.jsx';
 
 function ApparelPage() {
   return (
@@ -30,6 +31,7 @@ function ApparelPage() {
             
             <div className="apparel-container">
               <div className="apparel-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="tshirt" /></span></div>
                 <h4 className="apparel-title">Custom T-Shirts</h4>
                 <p className="apparel-price">Starting from ₹299</p>
                 <p className="apparel-description">High-quality cotton t-shirts with your custom design. Perfect for teams, events, or personal wear.</p>
@@ -69,6 +71,7 @@ function ApparelPage() {
               </div>
 
               <div className="apparel-item">
+                <div className="placeholder-tile"><span className="icon-badge"><Icon name="cap" /></span></div>
                 <h4 className="apparel-title">Custom Caps</h4>
                 <p className="apparel-price">Starting from ₹199</p>
                 <p className="apparel-description">Premium quality caps with custom embroidery or printing. Great for promotions and merchandise.</p>

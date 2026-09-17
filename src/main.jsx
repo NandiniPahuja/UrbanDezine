@@ -22,6 +22,7 @@ import GiftingSetsPage from './GiftingSets/page.jsx'
 import TechPage from './Tech/page.jsx'
 import BagsPage from './Bags/page.jsx'
 import CustomMerchandisePage from './CustomMerchandise/page.jsx'
+import { Icon } from './icons.jsx'
 
 function HomePage() {
   return <App />;
@@ -60,7 +61,7 @@ function App() {
                 <path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/>
               </svg>
             </a>
-            <span className="contact-number">+91 831 061 0919</span>
+            <span className="contact-number">+91 831 061 3919</span>
           </div>
           <div className="nav-buttons">
             <Link to="/" className="nav-button">Home</Link>
@@ -75,12 +76,12 @@ function App() {
           <section id="home" className="section">
             <div className="title-container">
               <div className="title-content animate-in">
-                <p className={`tagline ${showContent ? 'fade-in-up delay-1' : ''}`} style={{color: "white", fontWeight: "bold", fontSize: "1.5rem"}}>Gifting made memorable.</p>
+                <p className={`tagline ${showContent ? 'fade-in-up delay-1' : ''}`}>Gifting made memorable.</p>
                 <h1 className={`title ${showContent ? 'fade-in-up delay-2' : ''}`}>Urban Dezine</h1>
-                <p className={`subheading ${showContent ? 'fade-in-up delay-3' : ''}`} style={{color: "white", fontWeight: "bold", fontSize: "1.5rem"}}>Customizing Your Thoughts Since 2015</p>
+                <p className={`subheading ${showContent ? 'fade-in-up delay-3' : ''}`}>Customizing Your Thoughts Since 2015</p>
                 <p className={`welcome-message ${showContent ? 'fade-in-up delay-4' : ''}`}>Looking for a gift that speaks your vibe? We turn your thoughts into beautiful, personalized products that stay close to the heart. From sleek metal pens to cozy hoodies, aesthetic diaries to premium laptop bags — everything here is uniquely you.</p>
                 
-                <a href="https://wa.me/918310610919" target="_blank" rel="noopener noreferrer" className={`whatsapp-button ${showContent ? 'fade-in-up delay-5' : ''}`}>
+                <a href="https://wa.me/918310613919" target="_blank" rel="noopener noreferrer" className={`whatsapp-button ${showContent ? 'fade-in-up delay-5' : ''}`}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                   </svg>
@@ -121,8 +122,8 @@ function App() {
               <p className={`welcome-message quote ${showContent ? 'fade-in-up delay-11' : ''}`}>
                 "Don't blend in. Stand out with something made just for you."
               </p>
-              
-              <a href="#products" className={`cta-button ${showContent ? 'fade-in-up delay-12' : ''}`} style={{background: "#29281E", color: "white"}}>
+
+              <a href="#products" className={`cta-button ${showContent ? 'fade-in-up delay-12' : ''}`}>
                 Explore Our Products
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -152,14 +153,16 @@ function App() {
                     </p>
                   </div>
                   
-                  <div className="story-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#88d3ce">
-                      <path d="M9 11H7v9h2v-9zm4 0h-2v9h2v-9zm4 0h-2v9h2v-9zm2.5-9H20v2h-0.5l-1 12H5.5l-1-12H4V2h0.5c0.28 0 0.5-0.22 0.5-0.5V1c0-0.55 0.45-1 1-1h12c0.55 0 1 0.45 1 1v0.5c0 0.28 0.22 0.5 0.5 0.5z"/>
-                    </svg>
+                  <div className="about-story">
+                    <div className="story-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="#88d3ce">
+                        <path d="M9 11H7v9h2v-9zm4 0h-2v9h2v-9zm4 0h-2v9h2v-9zm2.5-9H20v2h-0.5l-1 12H5.5l-1-12H4V2h0.5c0.28 0 0.5-0.22 0.5-0.5V1c0-0.55 0.45-1 1-1h12c0.55 0 1 0.45 1 1v0.5c0 0.28 0.22 0.5 0.5 0.5z"/>
+                      </svg>
+                    </div>
+                    <p>
+                      Whether you're looking to reward your team, surprise a loved one, or make your brand unforgettable, we craft each piece with attention to detail and a personal touch that makes all the difference.
+                    </p>
                   </div>
-                  <p>
-                    Whether you're looking to reward your team, surprise a loved one, or make your brand unforgettable, we craft each piece with attention to detail and a personal touch that makes all the difference.
-                  </p>
                 </div>
                 
                 <div className={`about-stats ${showContent ? 'fade-in-up delay-16' : ''}`}>
@@ -178,7 +181,7 @@ function App() {
                 </div>
                 
                 <div className={`about-cta ${showContent ? 'fade-in-up delay-17' : ''}`}>
-                  <a href="https://wa.me/918310610919" target="_blank" rel="noopener noreferrer" className="about-whatsapp-button">
+                  <a href="https://wa.me/918310613919" target="_blank" rel="noopener noreferrer" className="about-whatsapp-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
                       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                     </svg>
@@ -239,55 +242,55 @@ function App() {
                 <ul className="products-list">
                   <li className={`product-item ${showContent ? 'fade-in-up delay-15' : ''}`}>
                     <Link to="/pens" className="product-link">
-                      <span className="product-icon">✒️</span>
+                      <span className="product-icon"><Icon name="pen" /></span>
                       <span className="product-name">Premium Pens</span>
                       <span className="product-arrow">→</span>
                     </Link>
                   </li>
-                  
+
                   <li className={`product-item ${showContent ? 'fade-in-up delay-16' : ''}`}>
                     <Link to="/diaries" className="product-link">
-                      <span className="product-icon">📔</span>
+                      <span className="product-icon"><Icon name="book" /></span>
                       <span className="product-name">Elegant Diaries</span>
                       <span className="product-arrow">→</span>
                     </Link>
                   </li>
-                  
+
                   <li className={`product-item ${showContent ? 'fade-in-up delay-17' : ''}`}>
                     <Link to="/apparel" className="product-link">
-                      <span className="product-icon">👕</span>
+                      <span className="product-icon"><Icon name="tshirt" /></span>
                       <span className="product-name">Custom Apparel</span>
                       <span className="product-arrow">→</span>
                     </Link>
                   </li>
-                  
+
                   <li className={`product-item ${showContent ? 'fade-in-up delay-18' : ''}`}>
                     <Link to="/tech" className="product-link">
-                      <span className="product-icon">🔌</span>
+                      <span className="product-icon"><Icon name="chip" /></span>
                       <span className="product-name">Tech Accessories</span>
                       <span className="product-arrow">→</span>
                     </Link>
                   </li>
-                  
+
                   <li className={`product-item ${showContent ? 'fade-in-up delay-19' : ''}`}>
                     <Link to="/bags" className="product-link">
-                      <span className="product-icon">🎒</span>
+                      <span className="product-icon"><Icon name="backpack" /></span>
                       <span className="product-name">Premium Bags</span>
                       <span className="product-arrow">→</span>
                     </Link>
                   </li>
-                  
+
                   <li className={`product-item ${showContent ? 'fade-in-up delay-20' : ''}`}>
                     <Link to="/gifting-sets" className="product-link">
-                      <span className="product-icon">🎁</span>
+                      <span className="product-icon"><Icon name="gift" /></span>
                       <span className="product-name">Gifting Sets</span>
                       <span className="product-arrow">→</span>
                     </Link>
                   </li>
-                  
+
                   <li className={`product-item ${showContent ? 'fade-in-up delay-21' : ''}`}>
                     <Link to="/custom-merchandise" className="product-link">
-                      <span className="product-icon">☕</span>
+                      <span className="product-icon"><Icon name="mug" /></span>
                       <span className="product-name">Custom Merchandise</span>
                       <span className="product-arrow">→</span>
                     </Link>
@@ -365,7 +368,7 @@ function App() {
               <h3>Contact Us</h3>
               <p>📍 Based in India</p>
               <p><strong>Email:</strong> <a href="mailto:urbandezine2015@gmail.com">urbandezine2015@gmail.com</a></p>
-              <p><strong>WhatsApp:</strong> <a href="https://wa.me/918310610919">+91-8310610919</a></p>
+              <p><strong>WhatsApp:</strong> <a href="https://wa.me/918310613919">+91-8310613919</a></p>
             </div>
             <div className="contact-section">
               <h3>Follow Us</h3>
@@ -399,7 +402,9 @@ function App() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const container = document.getElementById('root');
+const root = container._reactRoot ?? (container._reactRoot = ReactDOM.createRoot(container));
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
